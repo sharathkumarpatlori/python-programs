@@ -1,0 +1,8 @@
+Suspect: John A. Doe
+Phone: +91-98765-43210
+Email: john.doe@example.com
+NOTE: Item moved on 2025-07-11.
+Contact: (555) 123-4567
+
+Random text. The artifact code: ART-2025-XY12.
+"Found traces of pigment 'vermilion' near the west wall."
