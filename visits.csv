@@ -1,4 +1,11 @@
-id,name,email,visit_date,notes
-1,Alice,a@example.com,2025-06-01,Saw suspicious man near archives
-2,Bob,b@example.com,2025-06-05,Left bag unattended
-3,John Doe,j.doe@example.com,2025-07-10,Asked about artifact ART-2025-XY12
+name,visit_date
+Alice,2025-09-01
+Bob,2025-09-01
+Charlie,2025-09-02
+Alice,2025-09-02
+Bob,2025-09-03
+Alice,2025-09-04
+Diana,2025-09-04
+Charlie,2025-09-05
+Bob,2025-09-05
+Alice,2025-09-06
