@@ -46,7 +46,7 @@ if __name__ == "__main__":
 try:
     with open("case_notes_2.txt", "r", encoding="utf-8") as f:
         content = f.read()
-        print("File Content:\n", content)
+        print("File Content:\n", content) 
 except FileNotFoundError:
     print("Error: The file 'case_notes_2.txt' was not found.")
 
