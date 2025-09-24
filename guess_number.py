@@ -1,23 +1,25 @@
-# guess_number_starter.py
 import random
 
-def play_round(player, number_to_guess, round_number):
-    print(f"\nRound {round_number}:")
-    # TODO: Ask the player to guess a number between 1 and 10
-    # TODO: If guess is correct, print message and return 10 points
-    # TODO: Else, print correct number and return 0 points
+def play_round(player, number_to_guess):
+    guess = int(input(f"{player}, guess a number between 1 and 10: "))
+    if guess == number_to_guess:
+        print("Correct! You earn 10 points.")
+        return 10
+    else:
+        print(f"Wrong! The number was {number_to_guess}.")
+        return 0
 
 def main():
-    print("Welcome to Guess the Number Game!\n")
+    print("Welcome to Guess the Number Game!")
     player = input("Enter your name: ")
     score = 0
     rounds = 3
 
-    for i in range(1, rounds + 1):
+    for _ in range(rounds):
         number_to_guess = random.randint(1, 10)
-        # TODO: Call play_round and add the returned points to score
+        score += play_round(player, number_to_guess)
 
-    # TODO: Print final score for player
-    
+    print(f"Game over. {player}'s total score: {score}")
+
 if __name__ == "__main__":
     main()
