@@ -1,0 +1,10 @@
+MUSEUM INVESTIGATION REPORT
+
+Phones found in notes: ['+91-98765-43210', '(555) 123-4567']
+Emails found in notes: ['john.doe@example.com']
+Artifact codes mentioned: ['ART-2025-XY12']
+Visitor frequency:
+ - Alice: 4 visits
+ - Bob: 3 visits
+ - Charlie: 2 visits
+ - Diana: 1 visits
