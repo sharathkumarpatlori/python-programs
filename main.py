@@ -40,8 +40,6 @@ if __name__ == "__main__":
     max_trials = 3
     number_to_guess = genNum(1, 10)
     guessNum(number_to_guess, max_trials)
-'''
-
 
 try:
     with open("case_notes_2.txt", "r", encoding="utf-8") as f:
@@ -49,5 +47,12 @@ try:
         print("File Content:\n", content) 
 except FileNotFoundError:
     print("Error: The file 'case_notes_2.txt' was not found.")
+'''
+
+import pandas as pd
+
+df = pd.read_csv("sales.csv")
+df["revenue"] = df["units"] * df["price"] 
+print(df)
 
 
