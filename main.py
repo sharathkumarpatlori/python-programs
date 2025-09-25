@@ -47,12 +47,28 @@ try:
         print("File Content:\n", content) 
 except FileNotFoundError:
     print("Error: The file 'case_notes_2.txt' was not found.")
-'''
 
 import pandas as pd
 
 df = pd.read_csv("sales.csv")
 df["revenue"] = df["units"] * df["price"] 
 print(df)
+'''
 
+# Task: Ask user for their favorite color and print: 'Your favorite color is BLUE'.
 
+# Task: Store your name and age in variables and print: 'Hello, my name is X and I am Y years old.'    
+
+# Task: Make a list of 3 fruits and print them one by one.
+
+# Task: Create a dictionary for a student: {'name': 'Alice', 'grade': 'A'} and print values.
+
+# Task: Write a program that checks if a number is positive or negative.
+
+# Task: Write a function square(x) that returns the square of a number.
+
+# Task: Try fetching weather for a city using wttr.in, e.g., 'https://wttr.in/London?format=3'.
+
+# Task: Create a dictionary {'name': 'Bob', 'score': 90} and print name and score.
+
+# Task: Ask user for a number and handle the case if they type text instead.
