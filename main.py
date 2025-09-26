@@ -56,19 +56,47 @@ print(df)
 '''
 
 # Task: Ask user for their favorite color and print: 'Your favorite color is BLUE'.
+input_color = input("Enter your favorite color: ")
+print(f"Your favorite color is {input_color}.")
 
-# Task: Store your name and age in variables and print: 'Hello, my name is X and I am Y years old.'    
+# Task: Store your name and age in variables and print: 
+# 'Hello, my name is X and I am Y years old.'    
+name = "Ram"
+age = 25
+print(f"Hello, my name is {name} and I am {age} years old.")
 
 # Task: Make a list of 3 fruits and print them one by one.
+fruits = ["Apple", "Banana", "Cherry"]
+for fruit in fruits:
+    print(fruit)
 
-# Task: Create a dictionary for a student: {'name': 'Alice', 'grade': 'A'} and print values.
+# Task: Create a dictionary for a student: {'name': 'Alice', 'grade': 'A'} and 
+# print values.
+my_dict = {"name": "Alice"}
+print(my_dict["name"])
+
+# Create a dictionary with key and multiple pairs
+students_dict = {'students': {'name' : 'Ram', 'roll_no' : '2005'}}
+print(students_dict['students'])
+print(students_dict['students']['roll_no'])
 
 # Task: Write a program that checks if a number is positive or negative.
+if number := int(input("Enter a number: ")):
+    if number > 0:
+        print("The number is positive.")
+    elif number < 0:
+        print("The number is negative.")
+    else:
+        print("The number is zero.")
 
 # Task: Write a function square(x) that returns the square of a number.
-
-# Task: Try fetching weather for a city using wttr.in, e.g., 'https://wttr.in/London?format=3'.
-
-# Task: Create a dictionary {'name': 'Bob', 'score': 90} and print name and score.
+def square(x):
+    return x * x
+print(square(5))
 
 # Task: Ask user for a number and handle the case if they type text instead.
+try:
+    user_input = int(input("Enter a number: "))
+    print(f"You entered the number: {user_input}")
+except ValueError:
+    print("That's not a valid number. Please enter a numeric value.")
